@@ -25,7 +25,23 @@ be kept together with your .cpp file for the component.
 You should delete this comment.
 */
 
+#ifndef SHIP_H
+#define SHIP_H
 
+#include "Geometry.h"
+#include "Track_base.h"
+#include "Sim_object.h"
+
+class Island;
+
+enum State
+{
+    docked, stopped, moving_to_position, moving_to_island, moving_on_course,
+    dead_in_the_water, sinking, sunk, on_the_buttom
+};
+
+class Ship: public Sim_object, private Track_base
+{
 public:
 	// initialize, then output constructor message
 	Ship(const std::string& name_, Point position_, double fuel_capacity_, 
@@ -114,13 +130,18 @@ protected:
 	Island * get_destination_Island() const;
 
 private:
-	double fuel;						// Current amount of fuel
-	double fuel_consumption;			// tons/nm required
+    double fuel_capacity;
+    double fuel;						// Current amount of fuel
+    double maximum_speed;
+    double fuel_consumption;			// tons/nm required
+    int resistance;
 	Point destination_point;			// Current destination position
-	Island* destination_Island;			// Current destination Island, if any
-	
+	Island* destination_island;			// Current destination Island, if any
+    Island* dock_island;
+    State ship_state;
+    
 	// Updates position, fuel, and movement_state, assuming 1 time unit (1 hr)
 	void calculate_movement();
+};
 
-
-
+#endif

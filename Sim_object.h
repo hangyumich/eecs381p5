@@ -4,14 +4,13 @@
 object's name, and has pure virtual accessor functions for the object's position
 and other information. */
 
-/* *** You may not add any additional classes, structs, functions etc to this file. */
 #include <string>
 struct Point;
 
 class Sim_object {
 public:
     // *** define the constructor in Sim_object.cpp to output the supplied message
-	Sim_object(const std::string& name_);
+    Sim_object(const std::string& name_);
 
     // *** define the destructor in Sim_object.cpp to output the supplied message
     virtual ~Sim_object();
@@ -22,17 +21,20 @@ public:
 	/* Interface for derived classes */
 	// *** declare the following as pure virtual functions 
 	// ask model to notify views of current state
-    void broadcast_current_state() const
-	Point get_location() const
-	void describe() const
-	void update()
+    virtual void broadcast_current_state() const = 0;
+    virtual Point get_location() const = 0;
+    virtual void describe() const = 0;
+    virtual void update() = 0;
 	
 	// Sim_objects must be unique, so disable copy/move construction, assignment
     // of base class; this will disable these operations for derived classes also.
-
+    Sim_object(const Sim_object&)=delete;
+    Sim_object(Sim_object&&)=delete;
+    Sim_object& operator= (const Sim_object&)=delete;
+    Sim_object& operator= (Sim_object&&)=delete;
+    
 private:
 	std::string name;
 };
-
 
 #endif

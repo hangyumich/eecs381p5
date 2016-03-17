@@ -18,6 +18,16 @@ If any protected or private members are shown here, then your class must also ha
 You should delete this comment.
 */
 
+#ifndef TANKER_H
+#define TANKER_H
+
+#include "Ship.h"
+class Island;
+
+enum TankerState {no_cargo_dest, loading, moving_to_unloading, unloading, moving_to_loading};
+
+class Tanker: public Ship
+{
 public:
 	// initialize, the output constructor message
 	Tanker(const std::string& name_, Point position_);
@@ -43,4 +53,15 @@ public:
 	// perform Tanker-specific behavior
 	void update() override;
 	void describe() const override;
+    
+private:
+    double cargo_capacity;
+    double cargo;
+    Island* load_destination;
+    Island* unload_destination;
+    TankerState tanker_state;
+    void check_no_cargo_destination();
+    void into_cycle();
+};
 
+#endif

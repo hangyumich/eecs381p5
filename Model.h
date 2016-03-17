@@ -18,9 +18,19 @@ If no protected members are shown, there must be none in your version.
 If any protected or private members are shown here, then your class must also have them and use them as intended.
 You should delete this comment.
 */
+#ifndef MODEL_H
+#define MODEL_H
+#include "Sim_object.h"
+#include <set>
+#include <map>
 
 // Declare the global model pointer
 class Model;
+class Island;
+class View;
+class Ship;
+struct Point;
+
 extern Model* g_Model_ptr;
 
 class Model {
@@ -73,10 +83,22 @@ public:
 	void notify_gone(const std::string& name);
 
 	// disallow copy/move construction or assignment
+    Model(const Model&)=delete;
+    Model(Model&&)=delete;
+    Model& operator= (const Model&)=delete;
+    Model& operator= (Model&&)=delete;
+    
 
 private:
 	int time;		// the simulated time
-
-
+    std::map<std::string, Sim_object*> sim_map;
+    std::map<std::string, Ship*> ship_map;
+    std::map<std::string, Island*> island_map;
+    std::set<View*> views;
+    std::set<std::string> name_set;
+    
+    void insert_ship(Ship*);
+    void insert_island(Island*);
 };
 
+#endif
