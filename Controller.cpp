@@ -3,7 +3,6 @@
 #include "View.h"
 #include "Ship.h"
 #include "Island.h"
-#include "Geometry.h"
 #include "Ship_factory.h"
 #include "Utility.h"
 #include <iostream>
@@ -43,16 +42,6 @@ double get_speed()
     }
     return speed;
 }
-
-//string get_island_name()
-//{
-//    string name;
-//    cin >> name;
-//    if (!g_Model_ptr->is_island_present(name)) {
-//        throw Error("Name is invalid!");
-//    }
-//    return name;
-//}
 
 Controller::Controller(): view_ptr(nullptr)
 {

@@ -113,7 +113,6 @@ void Model::update()
                       }});
 }
 
-
 /* View services */
 // Attaching a View adds it to the container and causes it to be updated
 // with all current objects'location (or other state information.

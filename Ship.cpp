@@ -2,7 +2,6 @@
 #include "Island.h"
 #include "Model.h"
 #include "Utility.h"
-#include "Navigation.h"
 #include <iostream>
 
 using std::cout;
@@ -23,7 +22,6 @@ that declares them. But this is often done as a way to make a class abstract,
 if there is no other virtual function that makes sense to mark as pure. Here we
 are defining it just to get the destructor message output.
 */
-
 
 Ship::~Ship()
 {

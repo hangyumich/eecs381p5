@@ -2,12 +2,6 @@
 This class is responsible for controlling the Model and View according to interactions
 with the user.
 */
-
-/* 
-*** This skeleton file shows the required public and protected interface for the class, which you may not modify. 
-If any protected or private members are shown here, then your class must also have them and use them as intended.
-You should delete this comment.
-*/
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
@@ -30,14 +24,24 @@ private:
 	// Future versions will need to manage more than one view.
 	View* view_ptr;
     
+    // reset attacked views to default
     void set_defaults();
+    // set the size of view
     void read_size();
+    // set the scale of view
     void set_zoom();
+    // set the origin point
     void set_pan();
+    // draw views
     void show_views();
+    // call objects describe in alphabetical order
     void model_status();
+    // model update
     void model_go();
+    // create a ship
     void model_create();
+    
+    // corresponding ship functions
     void set_ship_course(Ship*);
     void set_ship_position(Ship*);
     void set_ship_destination(Ship*);

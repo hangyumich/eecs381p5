@@ -6,12 +6,9 @@
 using std::cout;
 using std::endl;
 
-/*fuel capacity and initial amount: 1000, maximum speed 20., fuel consumption 10.tons/nm,
-resistance 6, firepower 3, maximum attacking range 15*/
-
 // initialize, then output constructor message
 Cruiser::Cruiser(const std::string& name_, Point position_)
-:Ship(name_, position_, 1000., 20, 10, 6), firepower(3), range(15), cruiser_state(not_attacking)
+:Ship(name_, position_, 1000., 20, 10, 6), firepower(3), range(15), cruiser_state(not_attacking), target(nullptr)
 {
     cout << "Cruiser " << get_name() << " constructed" << endl;
 }
@@ -56,7 +53,7 @@ void Cruiser::describe() const
 void Cruiser::receive_hit(int hit_force, Ship* attacker_ptr)
 {
     Ship::receive_hit(hit_force, attacker_ptr);
-    if (attacker_ptr != target) {
+    if (cruiser_state == not_attacking || attacker_ptr != target) {
         attack(attacker_ptr);
     }
 }

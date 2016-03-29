@@ -48,7 +48,6 @@
 		30223E391C991DDB000EBBE2 /* Model_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30223E371C991DDB000EBBE2 /* Model_demo.cpp */; };
 		305E01A51C96150600774651 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E01901C96150600774651 /* Geometry.cpp */; };
 		305E01A61C96150600774651 /* Navigation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E01921C96150600774651 /* Navigation.cpp */; };
-		305E01A71C96150600774651 /* p4_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E01941C96150600774651 /* p4_main.cpp */; };
 		305E01A81C96150600774651 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E01991C96150600774651 /* Model.cpp */; };
 		305E01A91C96150600774651 /* Ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E019B1C96150600774651 /* Ship.cpp */; };
 		305E01AA1C96150600774651 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E01A01C96150600774651 /* View.cpp */; };
@@ -62,6 +61,7 @@
 		30F550D61C9A3262004B5BC2 /* Ship_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30223E331C990582000EBBE2 /* Ship_factory.cpp */; };
 		30F550DA1C9A3D49004B5BC2 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E01991C96150600774651 /* Model.cpp */; };
 		30F550DB1C9A3D6B004B5BC2 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 305E01A01C96150600774651 /* View.cpp */; };
+		30F8CE931CA9D06100459013 /* p5_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F8CE921CA9D06100459013 /* p5_main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,12 +135,11 @@
 		30223E2A1C98FA77000EBBE2 /* Model */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Model; sourceTree = BUILT_PRODUCTS_DIR; };
 		30223E331C990582000EBBE2 /* Ship_factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ship_factory.cpp; sourceTree = SOURCE_ROOT; };
 		30223E371C991DDB000EBBE2 /* Model_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model_demo.cpp; sourceTree = "<group>"; };
-		305E01681C96121A00774651 /* eecs381pj4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = eecs381pj4; sourceTree = BUILT_PRODUCTS_DIR; };
+		305E01681C96121A00774651 /* eecs381pj5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = eecs381pj5; sourceTree = BUILT_PRODUCTS_DIR; };
 		305E01901C96150600774651 /* Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = SOURCE_ROOT; };
 		305E01911C96150600774651 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = SOURCE_ROOT; };
 		305E01921C96150600774651 /* Navigation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Navigation.cpp; sourceTree = SOURCE_ROOT; };
 		305E01931C96150600774651 /* Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigation.h; sourceTree = SOURCE_ROOT; };
-		305E01941C96150600774651 /* p4_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = p4_main.cpp; sourceTree = SOURCE_ROOT; };
 		305E01951C96150600774651 /* Ship_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ship_factory.h; sourceTree = SOURCE_ROOT; };
 		305E01961C96150600774651 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = SOURCE_ROOT; };
 		305E01971C96150600774651 /* Cruiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cruiser.h; sourceTree = SOURCE_ROOT; };
@@ -162,6 +161,7 @@
 		305E01BC1C96657300774651 /* Sim_object */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sim_object; sourceTree = BUILT_PRODUCTS_DIR; };
 		305E01C51C966AB600774651 /* Island.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Island.cpp; sourceTree = SOURCE_ROOT; };
 		3079B0E41C9A62B100D9A64D /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = SOURCE_ROOT; };
+		30F8CE921CA9D06100459013 /* p5_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = p5_main.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,7 +257,7 @@
 		305E015F1C96121A00774651 = {
 			isa = PBXGroup;
 			children = (
-				305E016A1C96121A00774651 /* eecs381pj4 */,
+				305E016A1C96121A00774651 /* eecs381pj5 */,
 				305E01BD1C96657300774651 /* Sim_object */,
 				30223DF71C97841C000EBBE2 /* Ship */,
 				30223E0B1C97BD6C000EBBE2 /* ShipDriver */,
@@ -270,7 +270,7 @@
 		305E01691C96121A00774651 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				305E01681C96121A00774651 /* eecs381pj4 */,
+				305E01681C96121A00774651 /* eecs381pj5 */,
 				305E01BC1C96657300774651 /* Sim_object */,
 				30223DF61C97841C000EBBE2 /* Ship */,
 				30223E0A1C97BD6C000EBBE2 /* ShipDriver */,
@@ -280,22 +280,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		305E016A1C96121A00774651 /* eecs381pj4 */ = {
+		305E016A1C96121A00774651 /* eecs381pj5 */ = {
 			isa = PBXGroup;
 			children = (
-				305E01961C96150600774651 /* Controller.h */,
 				305E01B31C9653CF00774651 /* Controller.cpp */,
+				305E01961C96150600774651 /* Controller.h */,
+				30F8CE921CA9D06100459013 /* p5_main.cpp */,
 				305E01901C96150600774651 /* Geometry.cpp */,
 				305E01911C96150600774651 /* Geometry.h */,
 				305E01921C96150600774651 /* Navigation.cpp */,
 				305E01931C96150600774651 /* Navigation.h */,
-				305E01941C96150600774651 /* p4_main.cpp */,
 				305E019F1C96150600774651 /* Utility.h */,
 				3079B0E41C9A62B100D9A64D /* Utility.cpp */,
 				305E01A21C96150600774651 /* strings.txt */,
 				305E01A31C96150600774651 /* Track_base.cpp */,
 				305E01A41C96150600774651 /* Track_base.h */,
 			);
+			name = eecs381pj5;
 			path = eecs381pj4;
 			sourceTree = "<group>";
 		};
@@ -382,9 +383,9 @@
 			productReference = 30223E2A1C98FA77000EBBE2 /* Model */;
 			productType = "com.apple.product-type.tool";
 		};
-		305E01671C96121A00774651 /* eecs381pj4 */ = {
+		305E01671C96121A00774651 /* eecs381pj5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 305E016F1C96121A00774651 /* Build configuration list for PBXNativeTarget "eecs381pj4" */;
+			buildConfigurationList = 305E016F1C96121A00774651 /* Build configuration list for PBXNativeTarget "eecs381pj5" */;
 			buildPhases = (
 				305E01641C96121A00774651 /* Sources */,
 				305E01651C96121A00774651 /* Frameworks */,
@@ -394,9 +395,9 @@
 			);
 			dependencies = (
 			);
-			name = eecs381pj4;
+			name = eecs381pj5;
 			productName = eecs381pj4;
-			productReference = 305E01681C96121A00774651 /* eecs381pj4 */;
+			productReference = 305E01681C96121A00774651 /* eecs381pj5 */;
 			productType = "com.apple.product-type.tool";
 		};
 		305E01BB1C96657300774651 /* Sim_object */ = {
@@ -445,7 +446,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 305E01631C96121A00774651 /* Build configuration list for PBXProject "eecs381pj4" */;
+			buildConfigurationList = 305E01631C96121A00774651 /* Build configuration list for PBXProject "eecs381pj5" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -457,7 +458,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				305E01671C96121A00774651 /* eecs381pj4 */,
+				305E01671C96121A00774651 /* eecs381pj5 */,
 				305E01BB1C96657300774651 /* Sim_object */,
 				30223DF51C97841C000EBBE2 /* Ship */,
 				30223E091C97BD6C000EBBE2 /* ShipDriver */,
@@ -547,8 +548,8 @@
 				30223E341C990582000EBBE2 /* Ship_factory.cpp in Sources */,
 				305E01A61C96150600774651 /* Navigation.cpp in Sources */,
 				30223E161C97BE04000EBBE2 /* Cruiser.cpp in Sources */,
+				30F8CE931CA9D06100459013 /* p5_main.cpp in Sources */,
 				305E01B71C96616B00774651 /* Sim_object.cpp in Sources */,
-				305E01A71C96150600774651 /* p4_main.cpp in Sources */,
 				305E01C61C966AB600774651 /* Island.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,14 +707,14 @@
 		305E01701C96121A00774651 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = eecs381pj5;
 			};
 			name = Debug;
 		};
 		305E01711C96121A00774651 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = eecs381pj5;
 			};
 			name = Release;
 		};
@@ -770,7 +771,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		305E01631C96121A00774651 /* Build configuration list for PBXProject "eecs381pj4" */ = {
+		305E01631C96121A00774651 /* Build configuration list for PBXProject "eecs381pj5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				305E016D1C96121A00774651 /* Debug */,
@@ -779,7 +780,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		305E016F1C96121A00774651 /* Build configuration list for PBXNativeTarget "eecs381pj4" */ = {
+		305E016F1C96121A00774651 /* Build configuration list for PBXNativeTarget "eecs381pj5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				305E01701C96121A00774651 /* Debug */,

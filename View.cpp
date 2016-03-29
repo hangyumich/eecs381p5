@@ -84,7 +84,7 @@ void View::draw() const
                  }
              });
     if (outsides.size()) {
-        for (int i = 0; i < outsides.size() - 1; ++i)
+        for (int i = 0; i < (int)outsides.size() - 1; ++i)
             cout << outsides[i] << ", ";
         cout << outsides[outsides.size() - 1];
         cout << " outside the map" << endl;
